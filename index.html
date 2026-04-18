@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruleta de Premios</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="shortcut icon" href="./componentes/Logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <main class="app">
+    <h1>Ruleta de Premios</h1>
+    <p class="subtitle">Presioná girar y descubrí qué te toca</p>
+
+    <div class="wheel-shell">
+      <canvas id="canvas" width="460" height="460" aria-label="Ruleta de premios"></canvas>
+      <div class="center-logo" aria-label="Logo de empresa">
+        <img id="companyLogo" src="componentes/logo.png" alt="Logo de la empresa">
+        <span id="logoFallback" class="logo-fallback">TU LOGO</span>
+      </div>
+    </div>
+
+    <button class="btn" id="spinBtn" type="button">Girar</button>
+    <div class="result" id="result" aria-live="polite"></div>
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
